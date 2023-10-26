@@ -31,6 +31,17 @@ body img {
 header {
   display: flex;
 }
+nav {
+  display: none;
+  position: absolute;
+  inset: 0 0 0 70%;
+  bottom: 0;
+  /* width: 100%; */
+  background-color: rgba(0, 0, 0, 0.9);
+  max-height: 150px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
 nav ul {
   list-style: none;
   /* display: flex;
@@ -54,17 +65,6 @@ button {
 }
 button:hover{
   cursor: pointer;
-}
-nav {
-  display: none;
-  position: absolute;
-  inset: 0 0 0 70%;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  max-height: 150px;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
 }
 .social-links {
   margin-top: 40px;
@@ -160,4 +160,10 @@ section {
   background-position: fixed;
   scroll-behavior: smooth;
   color: #18d26e;
+}
+.content {
+  background-color: hsla(0, 7%, 59%, 0.9);
+  position: absolute;
+  height: 200px;
+  max-width: 200px;
 }
