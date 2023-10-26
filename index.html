@@ -12,21 +12,19 @@
           </head>
     </head>
     <body>
-        <div class="header">
-            <img class="img" src="./assets/images/logo.png" />
-            <button><img id="menus" class="menu" onclick="topNav()" src="./assets/images/icon-menu.svg" alt="menu" /></button>
-            <!-- <img src="./assets/images/icon-menu-close.svg" alt="close" /> -->
-        </div>
             <nav id="navbar" onmouseleave="showNav()">
-                <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>About</a></li>
-                    <li><a href='#'>Skills</a></li>
-                    <li><a href='#'>Projects</a></li>
-                    <li><a href='#'>Contact</a></li>
-                </ul>
+                    <a href='#home' class="active">Home</a>
+                    <a href='#about'>About</a>
+                    <a href='#projects'>Projects</a>
+                    <a href='#skills'>Skills</a>
+                    <a href='#contact'>Contact</a>
             </nav>
-        <main>
+        <section id="home">
+            <div class="header">
+                <img class="img" src="./assets/images/logo.png" />
+                <button><img id="menus" class="menu" onclick="topNav()" src="./assets/images/icon-menu.svg" alt="menu" /></button>
+                <!-- <img src="./assets/images/icon-menu-close.svg" alt="close" /> -->
+            </div>
             <div class="waviy">
                 <span style="--i:1">HELLO!</span>
                 <span style="--i:2">I'M</span>
@@ -42,7 +40,19 @@
                 <a href="" class="instagram"><img src="./assets/images/Instagram.jpeg"></a>
                 <a href="" class="linkedin"><img src="./assets/images/Linkedin.jpeg"></a>
             </div>
-        </main>
+        </section>
+    <section id="about">
+        <h1>ABOUT ME</h1>
+    </section>
+    <section id="projects">
+        <h1>PROJECTS</h1>
+    </section>
+    <section id="skills">
+        <h1>SKILLS AND AWARDS</h1>
+    </section>
+    <section id="contact">
+        <h1>CONTACT</h1>
+    </section>
         <script src="index.js"></script>
     </body>
 </html>
