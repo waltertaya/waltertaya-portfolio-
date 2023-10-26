@@ -155,16 +155,23 @@ button:hover{
 }
 section {
   min-height: 100vh;
-  background: url('./assets/images/me.jpeg');
+  background-image: url('./assets/images/me.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
   scroll-behavior: smooth;
   color: #18d26e;
 }
+
+#about, #projects, #skills, #contact {
+  display: grid;
+  /* place-content: center; */
+}
 .content {
-  background-color: hsla(0, 7%, 59%, 0.9);
-  position: absolute;
-  height: 200px;
-  max-width: 200px;
+  background-color: hsla(0, 2%, 26%, 0.9);
+  margin: 1em 1em;
+  border-radius: 20px;
+}
+.content h1,h3,p,li {
+  padding: 10px;
 }
