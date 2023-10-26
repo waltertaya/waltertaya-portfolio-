@@ -171,6 +171,7 @@ section {
   background-color: hsla(0, 2%, 26%, 0.9);
   margin: 1rem 1rem;
   border-radius: 20px;
+  overflow: scroll;
 }
 .content h1,h3,p,li {
   padding: 10px;
