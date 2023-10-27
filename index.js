@@ -24,3 +24,33 @@ window.onscroll = () => {
         };
     });
 };
+
+function showProgress(){
+    progressBars.forEach(progressBar=>{
+        const value = progressBar.dataset.progress;
+        progressBar.style.opacity = 1;
+        progressBar.style.width = `${value}%`;
+    });
+}
+
+
+function hideProgress() {
+    progressBars.forEach(p => {
+        p.style.opacity = 0;
+        p.style.width = 0;
+    });
+}
+
+const skillsSelection = document.getElementById("skills");
+
+const progressBars = document.querySelectorAll('.progress-bar');
+
+window.addEventListener('scroll', () => {
+    const screenPos = window.innerHeight / 2;
+    const sectionPos = skillsSelection.getBoundingClientRect().top;
+    if (sectionPos < screenPos) {
+        showProgress();
+    }else{
+        hideProgress();
+    }
+});
